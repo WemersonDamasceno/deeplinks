@@ -4,7 +4,7 @@ import 'package:deeplinks_app/presentation/router/router.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-//adb shell am start -a android.intent.action.VIEW -d "https://novasystem.com/products/123" com.novasystem.deeplinks_app
+//adb shell am start -a android.intent.action.VIEW -d "https://novasystem.deeplinks_app.com/products/productId?productId=456" com.novasystem.deeplinks_app
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
