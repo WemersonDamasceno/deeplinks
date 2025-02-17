@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "646837749819",
+    "project_id": "deeplinks-d4b16",
+    "storage_bucket": "deeplinks-d4b16.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:646837749819:android:67038051a8a03d8062f41e",
+        "android_client_info": {
+          "package_name": "com.novasystem.deeplinks_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRTMKVSXDpSuHo8OR4akV7n6F4JbhVkLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
