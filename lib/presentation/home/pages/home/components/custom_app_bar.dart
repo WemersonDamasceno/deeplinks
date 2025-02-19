@@ -1,3 +1,4 @@
+import 'package:deeplinks_app/presentation/router/router.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -20,7 +21,7 @@ class CustomAppBar extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.only(top: 10.0, left: 10, bottom: 10),
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.grey[300],
@@ -48,7 +49,12 @@ class CustomAppBar extends StatelessWidget {
                 ),
               ),
             ),
-            const Icon(Icons.dehaze_rounded)
+            IconButton(
+              icon: const Icon(Icons.dehaze_rounded),
+              onPressed: () {
+                RouterImpl.router.push('/products/profile');
+              },
+            ),
           ],
         ),
       ),

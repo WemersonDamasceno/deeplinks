@@ -19,18 +19,9 @@ class FirebaseService {
   void onListenerNotification(RemoteMessage? message) async {
     if (message == null) return;
 
-    if (message.data['isDeeplink'] == "true" &&
-        message.data['deeplink'] != null) {
+    if (message.data['deeplink'] != null) {
       final String deeplink = message.data['deeplink'];
-
-      if (deeplink.contains('productId')) {
-        final Uri uri = Uri.parse(deeplink);
-        final productId = uri.queryParameters['productId'];
-
-        if (productId != null) {
-          router.go('/products/productId?productId=$productId');
-        }
-      }
+      RouterImpl.redirectUser(deeplink);
     }
   }
 
